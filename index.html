@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allison&family=Damion&family=Dancing+Script&family=Fuggles&family=Gloria+Hallelujah&family=Lovers+Quarrel&family=Pacifico&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Menu START -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="">Shop</a>
+  <a href="">About Us</a>
+  <a href="">Contact</a>
+</div>
+
+  
+<ul>
+  <div id="mobileMenu">
+    <span class="mobileMenuNav" onclick="openNav()">&#9776;</span>
+    <span class="heroLogoMobile">Invitation Planner</span>
+  </div>
+  <li><a  class="image active" href="">Home</a></li>
+  <li><a href="">Shop</a></li>
+  <li><a href="">About Us</a></li>
+  <li><a href="">Contact</a></li>
+  <li class="heroLogo">Invitation Planner</li>
+</ul>
+<!-- Menu END -->
+<div class="center-content">
+<h2 class="pageTitle">Wedding Invitation Planner</h2>
+<div class="planner-content-left">
+
+  <button class="accordion">Step 1: Choose Background</button>
+<div class="panel">
+  <div class="row">
+    <div class="column">
+      <img src="images\pexels-anna-rye-8411420.jpg" alt="Background-0000" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-ben-mack-5326901.jpg" alt="Background-000" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-ben-mack-6775241.jpg" alt="Background-00" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-constantin-dorin-adrian-3611882.jpg" alt="Background-0" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-darius-krause-2470655.jpg" alt="Background-1" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-eberhard-grossgasteiger-2088170.jpg" alt="Background-2" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-eberhard-grossgasteiger-2088205.jpg" alt="Background-3" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-eberhard-grossgasteiger-2310713.jpg" alt="Background-4" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-evie-shaffer-4004375.jpg" alt="Background-5" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-henry-&-co-1939485.jpg" alt="Background-6" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-jess-loiterton-4321069.jpg" alt="Background-7" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-karolina-grabowska-4862892.jpg" alt="Background-8" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-la-miko-3616764.jpg" alt="Background-9" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-laker-6156383.jpg" alt="Background-10" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-lucas-pezeta-3772353.jpg" alt="Background-11" onclick="imageChange(this);">
+    </div>
+    <div class="column">
+      <img src="images\pexels-oleg-magni-1224242.jpg" alt="Background-12" onclick="imageChange(this);">
+    </div>
+  </div>
+</div>
+
+<button class="accordion">Step 2: Add Message</button>
+<div class="panel">
+  <p>Enter Your Name</p>
+  <input type="text" placeholder="Person 1" id="userInputNameSection" onkeyup="userInputName()">
+  <p>Enter Your Partners Name</p>
+  <input type="text" placeholder="Person 2" id="userInputNameSection2" onkeyup="userInputName()">
+  <p>Enter Your Message</p>
+  <textarea id="messageInputSection" placeholder="You're Invited!" cols="30" rows="10" onkeyup="userInputName()"></textarea>
+</div>
+
+<button class="accordion">Step 3: Choose Font</button>
+<div class="panel">
+  <button class="inputBtn" onclick="fontChange1()">Font 1</button>
+  <button class="inputBtn" onclick="fontChange2()">Font 2</button>
+  <button class="inputBtn" onclick="fontChange3()">Font 3</button>
+  <button class="inputBtn" onclick="fontChange4()">Font 4</button>
+  <button class="inputBtn" onclick="fontChange5()">Font 5</button>
+  <button class="inputBtn" onclick="fontChange6()">Font 6</button>
+  <button class="inputBtn" onclick="fontChange7()">Font 7</button>
+  <button class="inputBtn" onclick="fontChange8()">Font 8</button>
+</div>
+
+<button class="accordion">Step 4: Choose Colour</button>
+<div class="panel">
+  <button class="inputBtn" onclick="colourChange1()">White</button>
+  <button class="inputBtn" onclick="colourChange2()">Black</button>
+  <button class="inputBtn" onclick="colourChange3()">Green</button>
+  <button class="inputBtn" onclick="colourChange4()">Blue</button>
+  <button class="inputBtn" onclick="colourChange5()">Pink</button>
+  <button class="inputBtn" onclick="colourChange6()">Purple</button>
+  <button class="inputBtn" onclick="colourChange7()">Grey</button>
+  <button class="inputBtn" onclick="colourChange8()">Orange</button>
+</div>
+
+</div>
+<div class="planner-content-right" id="planner-content-right">
+
+  <div class="container">
+        <!-- Image text -->
+        <p id="standardText" class="invitation">You're Invited to the wedding of</p>
+        <p id="nameInput" class="invitation"></p>
+        <p id="standardText2" class="invitation">&</p>
+        <p id="nameInput2" class="invitation"></p>
+        <p id="initalsDesign" class="invitation"></p>
+        <p id="messageInput" class="invitation"></p>
+    <!-- Background image -->
+    <img id="expandedImg">
+  </div>
+</div>
+
+</div>
+
+</body>
+</html>

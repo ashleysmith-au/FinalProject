@@ -1,0 +1,359 @@
+/* Global Styles START */
+
+@media only screen and (max-width: 600px) {
+  .col-articleGrid {
+    display: flex;
+    width: 100%;
+    height: 55vw;
+  }
+  li {
+    display:none;
+      }
+
+      #mobileMenu {
+        display:block;
+        height:40px;
+      }
+}
+
+@media only screen and (min-width: 601px) {
+      #mobileMenu {
+        display:none;
+      }
+
+      iframe {
+        width: 800px;
+        height:520px;
+      }
+}
+
+body {
+  margin:0px;
+}
+
+* {
+  font-family: arial;
+  box-sizing: border-box;
+}
+
+
+h2 {
+  text-align: center;
+}
+
+#pageTitle {
+  margin:auto;
+  text-align:center;
+}
+
+.introText {
+  margin:10px;
+  text-align: center;
+}
+
+.footerLeft {
+  float:left;
+}
+
+.footerRight{
+  float: right;
+}
+
+.footerBlock {
+height:50px;
+margin:10px;
+border-top: solid 1px gainsboro;
+}
+.IGLogo {
+height:55px;
+}
+
+.FBLogo {
+  height: 33px;
+  margin-bottom: 11px;
+}
+
+
+ul {
+  list-style-type: none;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-bottom: solid 1px gainsboro;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: rgb(54, 96, 164);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(54, 96, 164);
+  color: white;
+}
+
+.active {
+  background-color: rgb(54, 96, 164);
+  color:white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(54, 96, 164);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#mobileMenu {
+  transition: margin-left .5s;
+  color:white;
+}
+
+.mobileMenuNav {
+  cursor:pointer;
+  color: rgb(54, 96, 164);
+  margin-left: 5px;
+  font-size: 25px;
+  }
+  
+@media screen and (max-height: 600px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.heroLogo {
+  color: rgb(54, 96, 164);
+margin-top: 15px;
+font-weight: 700;
+margin-left: 17%;
+}
+
+.heroLogoMobile {
+color: rgb(54, 96, 164);
+margin-top: -5px;
+font-weight: 700;
+margin-left: 20%;
+}
+
+/* Global Styles END */
+
+/* Body Styles START */
+.center-content {
+  margin: auto;
+  width:90%;
+  height: 900px;
+  max-height:100%;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  display:block;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+  margin-bottom:10px;
+}
+
+.planner-content-left {
+  float: left;
+  width:35%;
+}
+
+.planner-content-right {
+  float: right;
+  width:60%;
+  margin-left:15px;
+  font-size: 20px;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  max-width:100%;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+  position: relative;
+  height:800px;
+  width: 640px;
+  background-image: url('https://dummyimage.com/640x800/ffffff/ededf0&text=Select+your+background+Image');
+}
+
+
+/* Closable button inside the image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+#expandedImg {
+  height: 800px;
+  width: 640px;
+}
+
+input {
+width:300px;
+}
+
+#nameInput {
+  z-index: 900;
+  top:340px;
+  position: absolute;
+  margin:auto;
+  text-align:center;
+  width:640px;
+}
+
+#standardText {
+  z-index: 900;
+  top:270px;
+  position: absolute;
+  margin:auto;
+  text-align:center;
+  width:640px;
+}
+
+#standardText2 {
+  z-index: 900;
+  top:400px;
+  position: absolute;
+  margin:auto;
+  text-align:center;
+  width:640px;
+}
+
+#nameInput2 {
+  z-index: 900;
+  top:460px;
+  position: absolute;
+  margin:auto;
+  text-align:center;
+  width:640px;
+}
+
+#initalsDesign {
+  z-index: 900;
+  top:80px;
+  position: absolute;
+  margin:auto;
+  text-align:center;
+  width:640px;
+  font-size:108px;
+}
+
+
+#messageInput {
+  z-index: 900;
+  top: 560px;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  width: 640px;
+}
+
+
+
+.inputBtn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.inputBtn:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.pageTitle {
+  color: rgb(54, 96, 164);
+}
+/* Body Styles EMD */
